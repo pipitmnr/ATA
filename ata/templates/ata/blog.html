@@ -24,7 +24,8 @@
                         {{blog.judul_blog}}
                     </h2>
                     <p>
-                        {{blog.isi_blog}} 
+                        {{ blog.isi_blog|safe|truncatewords:"30"|linebreaks }}
+                        <a href="{% url 'blog-detail' blog.id %}">Baca Selengkapnya</a>
                     </p>
                 </div>
             </div>

@@ -70,7 +70,7 @@ header{
     text-align: center;
     font-weight: bold;
 }
-.col-md-3 img{
+.pict-colmd3 img{
     margin: 20px auto;
     display: table;
 }
@@ -100,7 +100,12 @@ header{
     display: table;
     width: 650px;
 }
-.col-md-5 img{
+.author-pict img{
+    margin: 10px auto;
+    display: table;
+    width: 680px;
+}
+.pict-colmd5 img{
     margin: 20px auto;
     display: table;
 }
@@ -116,4 +121,13 @@ header{
 .button-add-data{
     margin-left: auto;
     display: table;
+}
+/* li a:active{
+    color: #45caff !important;
+} */
+.square {
+    /* padding: 10px; */
+    height: 100px;
+    width: 100px;
+    border: 1px solid #d3d8e0;
 }

@@ -22,6 +22,9 @@ def postBlog(request):
     post.save()
     blogs = Blog.objects.all()
     return redirect('blog')
+def detailBlog(request, id_blog):
+    blogs = Blog.objects.get(pk=id_blog)
+    return render(request, 'ata/blog-detail.html', {'blog': blogs})
 def mentee(request):
     mentees = Mentee.objects.all()
     data_mentee = {'mentees': mentees}
